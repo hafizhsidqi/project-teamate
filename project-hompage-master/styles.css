@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 1em;
+  background-color: darkseagreen;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+nav > a {
+  cursor: pointer;
+  color: #fff;
+}
+
+.content {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+p, ol {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+h1 {
+  background-color: darkslategrey;
+  border-radius: .3em;
+  padding: .3em .5em;
+  color: #fff;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 1em;
+}
+
+.cards-container > .card {
+  border-radius: 1em;
+  background-color: darkolivegreen;
+  color: #fff;
+  padding: 1em 0;
+  box-shadow: 2px 2px 8px 3px rgb(15, 15, 15);
+  cursor: pointer;
+
+  transition: 0.7s;
+}
+
+.cards-container > .card:hover {
+  background-color: darkseagreen;
+  color: #000;
+  position: relative;
+}
+
+.cards-container > .card:hover > h3::before {
+  content: '';
+  position: absolute;
+  right: -.3em;
+  top: -.3em;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: rgb(0, 255, 98);
+  border: solid .2rem rgb(23, 97, 72);
+}
+
+h3 {
+  margin: 0;
+  letter-spacing: .2rem;
+}
+
+img {
+  object-fit: cover;
+}
+
+ol > li {
+  font-size: 1.3rem;
+}

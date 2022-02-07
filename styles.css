@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(138, 114, 114);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #020713c7;
+  }
+
+  .content, .judul-menu, .contact,.daftar-menu {
+    margin-top: 0rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    background-color: #020713c7;
+    border-radius: .3em;
+    padding: .3em .5em;
+    color: #fff;
+  }
+
+  #greet {
+   text-align: center;
+  } 
+
+  p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  img {
+   max-width: 100%;
+   height:auto;
+  }
