@@ -16,7 +16,7 @@ body {
     float: left;
   }
   
-  li a {
+  li > a {
     display: block;
     color: rgb(138, 114, 114);
     text-align: center;
@@ -24,18 +24,18 @@ body {
     text-decoration: none;
   }
   
-  li a:hover {
+  li > a:hover {
     background-color: #ddd;
   }
   
-  li a.active {
+  li > a.active {
     color: white;
     background-color: #020713c7;
   }
 
-  .content, .judul-menu, .contact,.daftar-menu {
+  .content {
     margin-top: 0rem;
-    padding: 1rem;
+    margin: 1rem;
   }
 
   h1 {
@@ -43,6 +43,10 @@ body {
     border-radius: .3em;
     padding: .3em .5em;
     color: #fff;
+  }
+
+  h3 {
+    text-align:center
   }
 
   #greet {
@@ -55,6 +59,19 @@ body {
   }
 
   img {
-   max-width: 100%;
+   width: 100%;
    height:auto;
+  }
+
+  label {
+    font-size:20px;
+  }
+
+  input[type=text] {
+    height:100px;
+    width:100%;
+  }
+
+  input[type=submit] {
+    float:right;
   }
